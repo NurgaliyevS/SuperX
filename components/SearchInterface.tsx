@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { mockPosts } from '../lib/mock-data';
 
 interface SearchResult {
   id: string;
@@ -7,12 +8,12 @@ interface SearchResult {
   date: string;
   likes: number;
   retweets: number;
-  score: number;
+  score?: number;
 }
 
 export default function SearchInterface() {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<SearchResult[]>([]);
+  const [results, setResults] = useState<SearchResult[]>(mockPosts);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
