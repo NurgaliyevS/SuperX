@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Search, Heart, RefreshCw, AlertCircle } from 'lucide-react';
-import { mockPosts } from '../lib/mock-data';
+import React, { useState } from "react";
+import { Search, Heart, RefreshCw, AlertCircle } from "lucide-react";
+import { mockPosts } from "../lib/mock-data";
 
 interface SearchResult {
   id: string;
@@ -13,7 +13,7 @@ interface SearchResult {
 }
 
 export default function SearchInterface() {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>(mockPosts);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -25,34 +25,34 @@ export default function SearchInterface() {
     setError(null);
 
     try {
-      const response = await fetch('/api/search', {
-        method: 'POST',
+      const response = await fetch("/api/search", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           query,
-          limit: 10
+          limit: 10,
         }),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || 'Search failed');
+        throw new Error(errorData.message || "Search failed");
       }
 
       const data = await response.json();
       setResults(data.results);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to perform search');
-      console.error('Search error:', err);
+      setError(err instanceof Error ? err.message : "Failed to perform search");
+      console.error("Search error:", err);
     } finally {
       setLoading(false);
     }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !loading) {
+    if (e.key === "Enter" && !loading) {
       handleSearch();
     }
   };
@@ -60,8 +60,10 @@ export default function SearchInterface() {
   return (
     <div className="max-w-4xl mx-auto p-4 bg-base-200 min-h-screen">
       <div className="flex flex-col gap-6 mb-8">
-        <h1 className="text-3xl font-bold text-center text-primary">SuperX Post Search</h1>
-        
+        <h1 className="text-3xl font-bold text-center text-primary">
+          SuperX Post Search
+        </h1>
+
         <div className="flex gap-2">
           <div className="relative flex-1">
             <input
@@ -70,24 +72,20 @@ export default function SearchInterface() {
               onChange={(e) => setQuery(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Search posts..."
-              className="input input-bordered w-full pr-10"
+              className="input input-bordered w-full pr-10 disabled:bg-gray-100 disabled:text-gray-500 disabled:border-gray-300"
               disabled={loading}
             />
-            <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <Search
+              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+              size={20}
+            />
           </div>
-          <button 
+          <button
             onClick={handleSearch}
             disabled={loading || !query.trim()}
-            className="btn btn-primary"
+            className="btn btn-primary w-40"
           >
-            {loading ? (
-              <>
-                <span className="loading loading-spinner"></span>
-                Searching
-              </>
-            ) : (
-              'Search'
-            )}
+            {loading ? "Searching..." : "Search"}
           </button>
         </div>
       </div>
@@ -106,11 +104,16 @@ export default function SearchInterface() {
           </div>
         ) : (
           results.map((post) => (
-            <div key={post.id} className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div
+              key={post.id}
+              className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            >
               <div className="card-body">
                 <p className="text-lg mb-4">{post.text}</p>
                 <div className="flex justify-between items-center mt-2 text-sm">
-                  <span className="font-medium text-primary">{post.author}</span>
+                  <span className="font-medium text-primary">
+                    {post.author}
+                  </span>
                   <div className="flex gap-4">
                     <span title="Likes" className="flex items-center gap-1">
                       <Heart size={16} className="text-red-500" />
@@ -133,4 +136,3 @@ export default function SearchInterface() {
     </div>
   );
 }
-
