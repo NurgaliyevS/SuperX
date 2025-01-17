@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+
+interface SearchResult {
+  id: string;
+  text: string;
+  author: string;
+  date: string;
+  likes: number;
+  retweets: number;
+  score: number;
+}
 
 export default function SearchInterface() {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [page, setPage] = useState(1);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSearch = async () => {
     if (!query.trim()) return;
@@ -21,62 +30,91 @@ export default function SearchInterface() {
         },
         body: JSON.stringify({
           query,
-          page,
           limit: 10
         }),
       });
 
-      if (!response.ok) throw new Error('Search failed');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Search failed');
+      }
 
       const data = await response.json();
       setResults(data.results);
     } catch (err) {
-      setError('Failed to perform search. Please try again.');
+      setError(err instanceof Error ? err.message : 'Failed to perform search');
       console.error('Search error:', err);
     } finally {
       setLoading(false);
     }
   };
 
+  // Handle enter key press
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !loading) {
+      handleSearch();
+    }
+  };
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col items-center gap-4">
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search posts..."
-          className="input input-bordered w-full max-w-xs"
-        />
-        <button 
-          onClick={handleSearch}
-          disabled={loading}
-          className="btn btn-primary"
-        >
-          {loading ? 'Searching...' : 'Search'}
-        </button>
+    <div className="max-w-4xl mx-auto p-4">
+      <div className="flex flex-col gap-4 mb-8">
+        <h1 className="text-2xl font-bold">SuperX Post Search</h1>
+        
+        <div className="flex gap-2">
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyPress={handleKeyPress}
+            placeholder="Search posts..."
+            className="input input-bordered flex-1"
+            disabled={loading}
+          />
+          <button 
+            onClick={handleSearch}
+            disabled={loading || !query.trim()}
+            className="btn btn-primary min-w-[100px]"
+          >
+            {loading ? 'Searching...' : 'Search'}
+          </button>
+        </div>
+      </div>
 
-        {error && (
-          <div className="alert alert-error">{error}</div>
-        )}
+      {error && (
+        <div className="alert alert-error mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>{error}</span>
+        </div>
+      )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-          {results.map((post) => (
-            <div key={post._id} className="card bg-base-100 shadow-xl">
+      <div className="space-y-4">
+        {results.length === 0 && query && !loading && !error ? (
+          <div className="text-center text-gray-500 py-8">
+            No results found for "{query}"
+          </div>
+        ) : (
+          results.map((post) => (
+            <div key={post.id} className="card bg-base-100 shadow-xl">
               <div className="card-body">
-                <p>{post.text}</p>
-                <div className="card-actions justify-between">
-                  <span className="text-sm">@{post.author}</span>
-                  <div className="flex gap-2">
-                    <span>❤️ {post.likes}</span>
-                    <span>🔄 {post.retweets}</span>
+                <p className="text-lg">{post.text}</p>
+                <div className="flex justify-between items-center mt-2 text-sm text-gray-600">
+                  <span className="font-medium">{post.author}</span>
+                  <div className="flex gap-4">
+                    <span title="Likes">❤️ {post.likes.toLocaleString()}</span>
+                    <span title="Retweets">🔄 {post.retweets.toLocaleString()}</span>
                   </div>
+                </div>
+                <div className="text-xs text-gray-400 mt-2">
+                  Posted on: {new Date(post.date).toLocaleDateString()}
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          ))
+        )}
       </div>
     </div>
   );
-} 
+}

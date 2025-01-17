@@ -1,18 +1,18 @@
-import connectDB from '../../lib/mongodb';
-import Post from '../../models/Post';
-import OpenAI from 'openai';
+import { MongoClient } from 'mongodb';
+import { OpenAI } from 'openai';
 
+// Initialize OpenAI client
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-export async function getEmbedding(text: string) {
+// Function to generate embeddings
+async function getEmbedding(text: string) {
   try {
     const response = await openai.embeddings.create({
       model: "text-embedding-3-small",
       input: text.trim(),
     });
-
     return response.data[0].embedding;
   } catch (error) {
     console.error('Error generating embedding:', error);
@@ -21,51 +21,67 @@ export async function getEmbedding(text: string) {
 }
 
 export default async function handler(req, res) {
+  // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
+  let client;
   try {
-    await connectDB();
+    const { query, limit = 10 } = req.body;
 
-    const { query, limit = 10, page = 1 } = req.body;
+    if (!query?.trim()) {
+      return res.status(400).json({ message: 'Query is required' });
+    }
 
-    // Get vector embedding for search query
-    // Note: You'll need to implement getEmbedding function using your preferred embedding service
+    // Generate embedding for search query
     const queryEmbedding = await getEmbedding(query);
 
-    const skip = (page - 1) * limit;
+    // Connect to MongoDB
+    client = await MongoClient.connect(process.env.MONGODB_URI);
+    const db = client.db("superx");
+    const collection = db.collection('posts');
 
-    const pipeline = [
+    // Perform vector search
+    const results = await collection.aggregate([
       {
-        $search: {
-          index: "default",
-          knnBeta: {
-            vector: queryEmbedding,
-            path: "embedding",
-            k: limit
-          }
+        $vectorSearch: {
+          index: "embedding",
+          path: "embedding",
+          queryVector: queryEmbedding,
+          numCandidates: limit * 2,
+          limit: limit
         }
       },
       {
-        $skip: skip
-      },
-      {
-        $limit: limit
+        $project: {
+          _id: 0,
+          id: 1,
+          text: 1,
+          author: 1,
+          date: 1,
+          likes: 1,
+          retweets: 1,
+          score: { $meta: "vectorSearchScore" }
+        }
       }
-    ];
-
-    const results = await Post.aggregate(pipeline);
-    const totalResults = await Post.countDocuments();
+    ]).toArray();
 
     return res.status(200).json({
       results,
-      totalResults,
-      currentPage: page
+      totalResults: results.length,
     });
 
   } catch (error) {
     console.error('Search error:', error);
-    return res.status(500).json({ message: 'Internal server error' });
+    return res.status(500).json({ 
+      message: 'Internal server error', 
+      error: error.message 
+    });
+  } finally {
+    // Always close the client connection
+    if (client) {
+      await client.close();
+    }
   }
-} 
+}
