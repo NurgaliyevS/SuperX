@@ -6,7 +6,7 @@ export const mockPosts = [
     date: "2024-01-15T10:30:00Z",
     likes: 245,
     retweets: 89,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_2",
@@ -15,7 +15,7 @@ export const mockPosts = [
     date: "2024-01-14T15:20:00Z",
     likes: 567,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_3",
@@ -24,7 +24,7 @@ export const mockPosts = [
     date: "2024-01-13T09:15:00Z",
     likes: 892,
     retweets: 334,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_4",
@@ -33,7 +33,7 @@ export const mockPosts = [
     date: "2024-01-12T14:20:00Z",
     likes: 423,
     retweets: 156,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_5",
@@ -42,7 +42,7 @@ export const mockPosts = [
     date: "2024-01-11T16:45:00Z",
     likes: 678,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_6",
@@ -51,7 +51,7 @@ export const mockPosts = [
     date: "2024-01-10T11:30:00Z",
     likes: 345,
     retweets: 89,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_7",
@@ -60,7 +60,7 @@ export const mockPosts = [
     date: "2024-01-09T13:15:00Z",
     likes: 892,
     retweets: 445,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_8",
@@ -69,7 +69,7 @@ export const mockPosts = [
     date: "2024-01-08T15:40:00Z",
     likes: 567,
     retweets: 178,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_9",
@@ -78,7 +78,7 @@ export const mockPosts = [
     date: "2024-01-07T12:20:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_10",
@@ -87,7 +87,7 @@ export const mockPosts = [
     date: "2024-01-06T14:30:00Z",
     likes: 345,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_11",
@@ -96,7 +96,7 @@ export const mockPosts = [
     date: "2024-01-05T16:15:00Z",
     likes: 678,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_12",
@@ -105,7 +105,7 @@ export const mockPosts = [
     date: "2024-01-04T10:45:00Z",
     likes: 234,
     retweets: 89,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_13",
@@ -114,7 +114,7 @@ export const mockPosts = [
     date: "2024-01-03T13:20:00Z",
     likes: 567,
     retweets: 189,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_14",
@@ -123,7 +123,7 @@ export const mockPosts = [
     date: "2024-01-02T15:40:00Z",
     likes: 789,
     retweets: 345,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_15",
@@ -132,7 +132,7 @@ export const mockPosts = [
     date: "2024-01-01T11:30:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_16",
@@ -141,7 +141,7 @@ export const mockPosts = [
     date: "2023-12-31T14:20:00Z",
     likes: 892,
     retweets: 445,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_17",
@@ -150,7 +150,7 @@ export const mockPosts = [
     date: "2023-12-30T16:45:00Z",
     likes: 567,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_18",
@@ -159,7 +159,7 @@ export const mockPosts = [
     date: "2023-12-29T10:15:00Z",
     likes: 345,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_19",
@@ -168,7 +168,7 @@ export const mockPosts = [
     date: "2023-12-28T13:40:00Z",
     likes: 678,
     retweets: 289,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_20",
@@ -177,7 +177,7 @@ export const mockPosts = [
     date: "2023-12-27T15:20:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_21",
@@ -186,7 +186,7 @@ export const mockPosts = [
     date: "2023-12-26T11:45:00Z",
     likes: 789,
     retweets: 345,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_22",
@@ -195,7 +195,7 @@ export const mockPosts = [
     date: "2023-12-25T14:30:00Z",
     likes: 567,
     retweets: 189,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_23",
@@ -204,7 +204,7 @@ export const mockPosts = [
     date: "2023-12-24T16:15:00Z",
     likes: 892,
     retweets: 445,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_24",
@@ -213,7 +213,7 @@ export const mockPosts = [
     date: "2023-12-23T10:20:00Z",
     likes: 345,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_25",
@@ -222,7 +222,7 @@ export const mockPosts = [
     date: "2023-12-22T13:45:00Z",
     likes: 678,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_26",
@@ -231,7 +231,7 @@ export const mockPosts = [
     date: "2023-12-21T15:30:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_27",
@@ -240,7 +240,7 @@ export const mockPosts = [
     date: "2023-12-20T11:20:00Z",
     likes: 789,
     retweets: 345,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_28",
@@ -249,7 +249,7 @@ export const mockPosts = [
     date: "2023-12-19T14:45:00Z",
     likes: 567,
     retweets: 189,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_29",
@@ -258,7 +258,7 @@ export const mockPosts = [
     date: "2023-12-18T16:30:00Z",
     likes: 892,
     retweets: 445,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_30",
@@ -267,7 +267,7 @@ export const mockPosts = [
     date: "2023-12-17T10:15:00Z",
     likes: 345,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
 
   // WEB3/CRYPTO STARTUPS (30 posts)
@@ -278,7 +278,7 @@ export const mockPosts = [
     date: "2023-12-16T13:20:00Z",
     likes: 678,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_32",
@@ -287,7 +287,7 @@ export const mockPosts = [
     date: "2023-12-15T15:45:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_33",
@@ -296,7 +296,7 @@ export const mockPosts = [
     date: "2023-12-14T11:30:00Z",
     likes: 789,
     retweets: 345,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_34",
@@ -305,7 +305,7 @@ export const mockPosts = [
     date: "2023-12-13T14:20:00Z",
     likes: 567,
     retweets: 189,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_35",
@@ -314,7 +314,7 @@ export const mockPosts = [
     date: "2023-12-12T16:45:00Z",
     likes: 892,
     retweets: 445,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_36",
@@ -323,7 +323,7 @@ export const mockPosts = [
     date: "2023-12-11T10:15:00Z",
     likes: 345,
     retweets: 123,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_37",
@@ -332,7 +332,7 @@ export const mockPosts = [
     date: "2023-12-10T13:40:00Z",
     likes: 678,
     retweets: 234,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_38",
@@ -341,7 +341,7 @@ export const mockPosts = [
     date: "2023-12-09T15:20:00Z",
     likes: 456,
     retweets: 167,
-    embedding: []
+    embedding: [],
   },
   {
     id: "post_39",
@@ -350,6 +350,556 @@ export const mockPosts = [
     date: "2023-12-08T11:45:00Z",
     likes: 789,
     retweets: 345,
+    embedding: [],
+  },
+  {
+    id: "post_40",
+    text: "NFT marketplace for real estate tokenization. Need technical cofounder with Solidity expertise. Licensed in CA, NY, FL. $500K seed raised. #nft #realestate",
+    author: "@realestate_nft",
+    date: "2023-12-07T14:30:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: [],
+  },
+  {
+    id: "post_41",
+    text: "Building decentralized cloud storage platform. Seeking distributed systems expert as cofounder. 1PB stored, 10K users. Filecoin grant received. #web3 #storage",
+    author: "@web3_storage",
+    date: "2023-12-06T12:15:00Z",
+    likes: 423,
+    retweets: 156,
+    embedding: [],
+  },
+  {
+    id: "post_42",
+    text: "Web3 music streaming platform needs technical cofounder. Royalty smart contracts live. 100K tracks uploaded. Experience with ERC-721 required. #music #web3",
+    author: "@web3_music",
+    date: "2023-12-05T16:40:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: [],
+  },
+  {
+    id: "post_43",
+    text: "Building cross-chain bridge infrastructure. Looking for security-focused cofounder. Audit by Trail of Bits scheduled. ZK proofs experience needed. #defi #bridge",
+    author: "@bridge_builder",
+    date: "2023-12-04T11:30:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: [],
+  },
+  {
+    id: "post_44",
+    text: "DeFi insurance protocol seeking technical cofounder. Risk modeling experience required. $2M TVL. Partnership with Nexus Mutual. #defi #insurance",
+    author: "@defi_insurance",
+    date: "2023-12-03T14:20:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: [],
+  },
+  {
+    id: "post_45",
+    text: "Web3 gaming infrastructure startup. Need Unity developer as cofounder. SDK used by 50 games. Experience with Layer 2 scaling required. #gamefi #web3",
+    author: "@gamefi_infra",
+    date: "2023-12-02T15:45:00Z",
+    likes: 734,
+    retweets: 289,
+    embedding: [],
+  },
+  {
+    id: "post_46",
+    text: "Building decentralized derivatives exchange. Seeking quant developer as cofounder. Options + perpetuals live. Chainlink integration complete. #defi #derivatives",
+    author: "@defi_derivatives",
+    date: "2023-12-01T13:10:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: [],
+  },
+  {
+    id: "post_47",
+    text: "Privacy-focused Layer 1 blockchain needs protocol developer as cofounder. zk-SNARK experience required. Research paper published at Financial Cryptography. #privacy #blockchain",
+    author: "@privacy_chain",
+    date: "2023-11-30T16:30:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: [],
+  },
+  {
+    id: "post_48",
+    text: "Web3 social graph protocol seeking technical cofounder. 100K profiles indexed. Experience with GraphQL and IPFS needed. Integration with 5 dApps. #web3 #social",
+    author: "@social_graph",
+    date: "2023-11-29T11:45:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: [],
+  },
+  {
+    id: "post_49",
+    text: "Building DeFi yield aggregator. Looking for smart contract developer as cofounder. $5M TVL. Audit by OpenZeppelin complete. #defi #yield",
+    author: "@yield_aggregator",
+    date: "2023-11-28T14:20:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: [],
+  },
+  {
+    id: "post_50",
+    text: "NFT liquidity protocol needs technical cofounder. Fractional NFT trading live. Integration with OpenSea. Solidity expertise required. #nft #defi",
+    author: "@nft_liquidity",
+    date: "2023-11-27T15:50:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: [],
+  },
+  {
+    id: "post_51",
+    text: "Web3 data analytics platform seeking data engineer as cofounder. Real-time indexing of 10 chains. Experience with TheGraph required. #web3 #data",
+    author: "@web3_data",
+    date: "2023-11-26T12:15:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: [],
+  },
+  {
+    id: "post_52",
+    text: "Building decentralized identity verification protocol. Need cryptography expert as cofounder. Integration with Polygon ID. Zero-knowledge proofs experience needed. #did #web3",
+    author: "@did_protocol",
+    date: "2023-11-25T16:40:00Z",
+    likes: 634,
+    retweets: 212,
+    embedding: [],
+  },
+  {
+    id: "post_53",
+    text: "DeFi options protocol looking for quant developer as cofounder. Black-Scholes implementation live. Integration with Chainlink oracles. #defi #options",
+    author: "@defi_options",
+    date: "2023-11-24T11:30:00Z",
+    likes: 445,
+    retweets: 156,
+    embedding: [],
+  },
+  {
+    id: "post_54",
+    text: "Web3 marketplace for digital services needs technical cofounder. Escrow smart contracts deployed. 1K transactions completed. Rust experience preferred. #web3 #marketplace",
+    author: "@web3_marketplace",
+    date: "2023-11-23T14:45:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: [],
+  },
+  {
+    id: "post_55",
+    text: "Building cross-chain messaging protocol. Seeking distributed systems expert as cofounder. Live on 5 chains. IBC protocol experience needed. #blockchain #interop",
+    author: "@chain_messaging",
+    date: "2023-11-22T15:20:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: [],
+  },
+  {
+    id: "post_56",
+    text: "DeFi lending protocol needs smart contract developer as cofounder. Multi-collateral loans live. Flash loan implementation complete. #defi #lending",
+    author: "@defi_lending",
+    date: "2023-11-21T13:10:00Z",
+    likes: 734,
+    retweets: 289,
+    embedding: [],
+  },
+  {
+    id: "post_57",
+    text: "Web3 gaming assets marketplace seeking technical cofounder. Integration with 10 games live. Unity SDK available. Experience with ERC-1155 required. #gamefi #nft",
+    author: "@gaming_assets",
+    date: "2023-11-20T16:30:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: [],
+  },
+  {
+    id: "post_58",
+    text: "Building decentralized prediction markets. Looking for Solidity expert as cofounder. Oracle integration complete. $1M in active markets. #defi #predictions",
+    author: "@predict_markets",
+    date: "2023-11-19T11:45:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: [],
+  },
+  {
+    id: "post_59",
+    text: "Web3 social token platform needs technical cofounder. Creator tools live. 50K tokens created. Experience with ERC-20 required. #social #tokens",
+    author: "@social_tokens",
+    date: "2023-11-18T14:20:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: [],
+  },
+  {
+    id: "post_60",
+    text: "DeFi index protocol seeking smart contract developer as cofounder. 5 indices launched. Integration with major DEXs complete. #defi #index",
+    author: "@defi_index",
+    date: "2023-11-17T15:50:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: [],
+  },
+  // SaaS/B2B STARTUPS (Posts 61-90)
+  {
+    id: "post_61",
+    text: "Building enterprise task management platform. Need full-stack developer as cofounder. 50 corporate clients. Experience with React/Node.js required. #saas #productivity",
+    author: "@task_management",
+    date: "2023-11-16T12:15:00Z",
+    likes: 445,
+    retweets: 156,
+    embedding: [],
+  },
+  {
+    id: "post_62",
+    text: "B2B sales intelligence platform seeking technical cofounder. AI/ML experience needed. Integration with Salesforce complete. 100K leads processed. #sales #ai",
+    author: "@sales_intel",
+    date: "2023-11-15T16:40:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: [],
+  },
+  {
+    id: "post_63",
+    text: "Cloud cost optimization SaaS needs infrastructure expert as cofounder. AWS/Azure experience required. Saving clients $1M+ annually. #cloud #optimization",
+    author: "@cloud_costs",
+    date: "2023-11-14T11:30:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: [],
+  },
+  {
+    id: "post_64",
+    text: "Building HR analytics platform. Looking for data scientist as cofounder. 20 enterprise customers. Experience with Python/SQL required. #hr #analytics",
+    author: "@hr_analytics",
+    date: "2023-11-13T14:45:00Z",
+    likes: 634,
+    retweets: 212,
+    embedding: [],
+  },
+  {
+    id: "post_65",
+    text: "Customer support automation platform seeking ML engineer as cofounder. NLP experience needed. Processing 10K tickets daily. #support #automation",
+    author: "@support_auto",
+    date: "2023-11-12T15:20:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: [],
+  },
+  {
+    id: "post_66",
+    text: "B2B procurement platform needs technical cofounder. Supply chain experience required. $2M in transactions processed. Integration with SAP. #procurement #saas",
+    author: "@procurement_saas",
+    date: "2023-11-11T13:10:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: [],
+  },
+  {
+    id: "post_67",
+    text: "Building API management platform. Seeking backend developer as cofounder. GraphQL expertise needed. 1M API calls daily. #api #saas",
+    author: "@api_management",
+    date: "2023-11-10T16:30:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: [],
+  },
+  {
+    id: "post_68",
+    text: "B2B marketing automation platform looking for full-stack developer as cofounder. 200 paying customers. Experience with email deliverability required. #marketing #automation",
+    author: "@marketing_auto",
+    date: "2023-11-09T11:45:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: [],
+  },
+  {
+    id: "post_69",
+    text: "Cloud security compliance platform needs DevSecOps engineer as cofounder. SOC 2 expertise required. 50 enterprise clients. #security #compliance",
+    author: "@security_compliance",
+    date: "2023-11-08T14:20:00Z",
+    likes: 445,
+    retweets: 156,
+    embedding: [],
+  },
+  {
+    id: "post_70",
+    text: "Building business intelligence SaaS. Seeking data engineer as cofounder. BigQuery/Snowflake experience needed. Processing 5TB daily. #bi #analytics",
+    author: "@bi_platform",
+    date: "2023-11-07T15:50:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: [],
+  },
+  {
+    id: "post_71",
+    text: "Contract management platform looking for technical cofounder. NLP experience required. Integration with DocuSign complete. 10K contracts processed. #legal #saas",
+    author: "@contract_mgmt",
+    date: "2023-11-06T12:15:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: [],
+  },
+  {
+    id: "post_72",
+    text: "B2B collaboration platform needs full-stack developer as cofounder. WebSocket expertise needed. 5K daily active users. #collaboration #saas",
+    author: "@collab_platform",
+    date: "2023-11-05T16:40:00Z",
+    likes: 634,
+    retweets: 212,
+    embedding: [],
+  },
+  {
+    id: "post_73",
+    text: "Building enterprise asset management SaaS. Seeking IoT expert as cofounder. Integration with industrial sensors. 100K devices tracked. #iot #asset",
+    author: "@asset_mgmt",
+    date: "2023-11-04T11:30:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: [],
+  },
+  {
+    id: "post_74",
+    text: "B2B payment automation platform looking for fintech developer as cofounder. ACH/Wire expertise required. $10M processed monthly. #payments #automation",
+    author: "@payment_auto",
+    date: "2023-11-03T14:45:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: [],
+  },
+  {
+    id: "post_75",
+    text: "Customer data platform needs data engineer as cofounder. Experience with real-time processing required. 50M events daily. #cdp #data",
+    author: "@customer_data",
+    date: "2023-11-02T15:20:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: [],
+  },
+  {
+    id: "post_76",
+    text: "Building enterprise scheduling platform. Seeking calendar API expert as cofounder. Integration with Microsoft 365 complete. 20K bookings daily. #calendar #saas",
+    author: "@schedule_platform",
+    date: "2023-11-01T13:10:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: [],
+  },
+  {
+    id: "post_77",
+    text: "B2B video conferencing platform needs WebRTC expert as cofounder. Low-latency streaming required. 100K meeting minutes daily.",
+    author: "@video_conf",
+    date: "2023-10-31T12:15:00Z",
+    likes: 634,
+    retweets: 212,
     embedding: []
   },
-]
+  {
+    id: "post_78",
+    text: "Building logistics optimization SaaS. Seeking optimization algorithm expert as cofounder. $5M in shipping costs saved for clients. #logistics #optimization",
+    author: "@logistics_opt",
+    date: "2023-10-30T11:30:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: []
+  },
+  {
+    id: "post_79",
+    text: "Enterprise contract lifecycle management platform seeking NLP engineer as cofounder. 50K contracts analyzed. Integration with SAP Ariba. #contracts #saas",
+    author: "@contract_lifecycle",
+    date: "2023-10-29T14:45:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: []
+  },
+  {
+    id: "post_80",
+    text: "Cloud-native CI/CD platform looking for DevOps expert as cofounder. Kubernetes expertise required. 1M builds deployed monthly. #ci #cd",
+    author: "@ci_cd_platform",
+    date: "2023-10-28T15:20:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: []
+  },
+  {
+    id: "post_81",
+    text: "AI-powered recruiting platform seeking full-stack engineer as cofounder. GPT-4 integration live. 10K matches made. #ai #recruiting",
+    author: "@ai_recruiting",
+    date: "2023-10-27T13:10:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: []
+  },
+  {
+    id: "post_82",
+    text: "Building predictive maintenance platform. Seeking IoT developer as cofounder. 1M sensors monitored. TensorFlow experience needed. #iot #maintenance",
+    author: "@predictive_maint",
+    date: "2023-10-26T16:30:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: []
+  },
+  {
+    id: "post_83",
+    text: "FinTech credit scoring platform needs data scientist as cofounder. Machine learning models live. Serving 1M users monthly. #fintech #creditscore",
+    author: "@fintech_credit",
+    date: "2023-10-25T12:15:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: []
+  },
+  {
+    id: "post_84",
+    text: "Decentralized finance platform seeking Solidity expert. $50M TVL achieved. Cross-chain support live. #defi #solidity",
+    author: "@defi_platform",
+    date: "2023-10-24T11:30:00Z",
+    likes: 734,
+    retweets: 289,
+    embedding: []
+  },
+  {
+    id: "post_85",
+    text: "Remote-first work management tool looking for technical cofounder. Asynchronous collaboration features live. Serving 20K teams. #remote #work",
+    author: "@remote_work",
+    date: "2023-10-23T14:45:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: []
+  },
+  {
+    id: "post_86",
+    text: "Building decentralized asset management platform. Seeking blockchain developer. $100M assets tokenized. Partnership with major exchanges. #crypto #assets",
+    author: "@crypto_assets",
+    date: "2023-10-22T15:50:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: []
+  },
+  {
+    id: "post_87",
+    text: "AI-powered email assistant platform seeking ML engineer as cofounder. GPT integration live. 50K daily emails optimized. #ai #email",
+    author: "@email_ai",
+    date: "2023-10-21T13:10:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: []
+  },
+  {
+    id: "post_88",
+    text: "FinTech payment infrastructure platform looking for technical cofounder. Multi-currency support live. Processing $10M/month. #fintech #payments",
+    author: "@fintech_payments",
+    date: "2023-10-20T16:30:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: []
+  },
+  {
+    id: "post_89",
+    text: "AI-driven learning management platform needs full-stack developer. Custom learning paths implemented. 100 enterprise customers. #ai #education",
+    author: "@ai_learning",
+    date: "2023-10-19T11:45:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: []
+  },
+  {
+    id: "post_90",
+    text: "Building remote productivity platform. Seeking backend developer with WebSocket expertise. Real-time collaboration tools live. #remote #productivity",
+    author: "@remote_productivity",
+    date: "2023-10-18T14:20:00Z",
+    likes: 445,
+    retweets: 156,
+    embedding: []
+  },
+  {
+    id: "post_91",
+    text: "Building decentralized data exchange platform. Seeking cryptography expert as cofounder. Homomorphic encryption experience required. 1TB exchanged monthly. #data #decentralized",
+    author: "@data_exchange",
+    date: "2023-10-31T14:20:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: []
+  },
+  {
+    id: "post_92",
+    text: "Web3 healthcare data protocol needs technical cofounder. HIPAA-compliant smart contracts deployed. Integration with 5 providers. #web3 #healthcare",
+    author: "@healthcare_protocol",
+    date: "2023-10-30T15:50:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: []
+  },
+  {
+    id: "post_93",
+    text: "Building decentralized renewable energy marketplace. Seeking blockchain developer as cofounder. Live on Polygon. 1MW energy traded. #blockchain #energy",
+    author: "@energy_market",
+    date: "2023-10-29T12:15:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: []
+  },
+  {
+    id: "post_94",
+    text: "DeFi protocol for tokenized carbon credits. Looking for Solidity developer as cofounder. 500K credits traded. Chainlink integration complete. #defi #carbon",
+    author: "@carbon_credits",
+    date: "2023-10-28T16:40:00Z",
+    likes: 634,
+    retweets: 212,
+    embedding: []
+  },
+  {
+    id: "post_95",
+    text: "Web3 intellectual property platform seeking technical cofounder. 1K patents tokenized. ERC-721 expertise needed. Integration with IP registry live. #nft #ip",
+    author: "@ip_platform",
+    date: "2023-10-27T11:45:00Z",
+    likes: 456,
+    retweets: 167,
+    embedding: []
+  },
+  {
+    id: "post_96",
+    text: "Building decentralized gaming leaderboard. Seeking Unity/Web3 developer as cofounder. 50 games integrated. Chainlink VRF experience required. #gaming #leaderboard",
+    author: "@game_leaderboard",
+    date: "2023-10-26T14:45:00Z",
+    likes: 567,
+    retweets: 189,
+    embedding: []
+  },
+  {
+    id: "post_97",
+    text: "Web3-based advertising protocol needs cofounder. Programmatic advertising smart contracts deployed. 10K campaigns run. #advertising #web3",
+    author: "@ad_protocol",
+    date: "2023-10-25T13:10:00Z",
+    likes: 892,
+    retweets: 445,
+    embedding: []
+  },
+  {
+    id: "post_98",
+    text: "Building tokenized real estate investment platform. Seeking Solidity developer as cofounder. Fractional ownership live. $10M assets tokenized. #realestate #tokenization",
+    author: "@realestate_tokens",
+    date: "2023-10-24T16:30:00Z",
+    likes: 789,
+    retweets: 345,
+    embedding: []
+  },
+  {
+    id: "post_99",
+    text: "Web3 staking aggregator needs technical cofounder. 50K users. Integration with major staking pools complete. Rust experience required. #staking #web3",
+    author: "@staking_aggregator",
+    date: "2023-10-23T11:45:00Z",
+    likes: 678,
+    retweets: 234,
+    embedding: []
+  },
+  {
+    id: "post_100",
+    text: "Decentralized marketplace for AI models needs cofounder. Models on-chain. 1K transactions monthly. Experience with Ethereum required. #ai #marketplace",
+    author: "@ai_marketplace",
+    date: "2023-10-22T14:20:00Z",
+    likes: 523,
+    retweets: 178,
+    embedding: []
+  }
+];
